@@ -5,7 +5,11 @@ Built for [Medhacks 2017](http://medhacks.org/)
 ![MedHacks logo](http://medhacks.org/assets/img/logo_dark.png)
 
 
+# Branch p3serves
 
+Hospitalist client and patients database servers are both going to be standard zero-config web apps.
+
+`python3 -m http.server`
 
 # Development
 
