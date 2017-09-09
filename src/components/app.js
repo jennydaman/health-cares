@@ -2,6 +2,7 @@ import { h, Component } from 'preact';
 import { Router } from 'preact-router';
 import { Link } from 'preact-router/match';
 
+import Buttons from './buttons'
 import Tip from './tip';
 
 import style from './style'
@@ -33,13 +34,9 @@ export default class App extends Component {
 				<center>
 					<h1>Health Cares</h1>
 
-					<div id="buttons" style="padding-top: 2%">
-						<Link class={style.menubutton} activeClassName={style.active} href="/symptoms">Symptoms&nbsp;report</Link>
-						<Link class={style.menubutton} activeClassName={style.active} href="/feedback">Patient&nbsp;feedback</Link>
-						<Link class={style.menubutton} activeClassName={style.active} href="/info">Hospitalization&nbsp;info</Link>
-					</div>
+					<Buttons/>
 
-					<Router onChange={this.handleRoute}>
+					<Router id="widget" onChange={this.handleRoute}>
 						<Tip path="/" style="font-style: italic;" text="Please select an option to begin."/>
 						<Tip path="/symptoms" style="font-weight: bold;" text="How are you feeling?"/>
 						<Tip path="/feedback" style="font-weight: bold" text="How was your care?"/>

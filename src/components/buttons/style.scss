@@ -1,0 +1,35 @@
+
+$selectc: #a5c7ff;
+$animt: 0.5s;
+
+.menubutton {
+
+    display: inline-block;
+
+    text-decoration: none;
+    font-size: 40px;
+    color: gray;
+
+    min-height: 20%;
+    border-radius: 25px;
+    padding: 20px 16px;
+    margin: 20px;
+    cursor: pointer;
+    
+    background: rgba(0, 0, 0, 0.2);
+    will-change: color, border;
+    border: 2px solid grey;
+    transition: color $animt, border $animt;
+
+    &:hover {
+
+        border: 2px solid $selectc;
+        color: $selectc;
+    }
+}
+
+.active {
+    border: 2px solid #eee;
+    color: #eee;
+    font-weight: bold;
+}
