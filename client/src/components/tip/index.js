@@ -6,8 +6,7 @@ export default class Tip extends Component {
 		return (
 			<div>
 				<footer style={"font-size: 200%; " + this.props.style}>{this.props.text}</footer>
-
-				<a class={style.pink} href={this.props.link}>Continue (click/tap here)</a>
+				<a class={style.pink} style={this.props.link ? "" : "display: none;"} href={this.props.link}>Continue (click/tap here)</a>
 			</div>
 		);
 	}
