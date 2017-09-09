@@ -1,6 +1,9 @@
 import { h, Component } from 'preact';
 import { Router } from 'preact-router';
-import { Link } from 'preact-router/match'
+import { Link } from 'preact-router/match';
+
+import Tip from './tip';
+
 import style from './style'
 
 // import Home from 'async!./home';
@@ -37,11 +40,10 @@ export default class App extends Component {
 					</div>
 
 					<Router onChange={this.handleRoute}>
-						<footer path="/" ><i style="font-size: 200%">Select an option to begin.</i></footer>
-						<footer path="/symptoms" ><strong style="font-size: 200%">How are you feeling?</strong></footer>
-						<footer path="/feedback" ><strong style="font-size: 200%">How was your care?</strong></footer>
-						<footer path="/info" ><strong style="font-size: 200%">Learn more about your current status.</strong></footer>
-
+						<Tip path="/" style="font-style: italic;" text="Please select an option to begin."/>
+						<Tip path="/symptoms" style="font-weight: bold;" text="How are you feeling?"/>
+						<Tip path="/feedback" style="font-weight: bold" text="How was your care?"/>
+						<Tip path="/info" style="font-weight: bold" text="Learn more about your current status."/>
 					</Router>
 				</center>
 			</div>
