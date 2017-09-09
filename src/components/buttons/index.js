@@ -17,8 +17,8 @@ export default class Buttons extends Component {
 		return (
 
 			<div id="buttons" style="padding-top: 2%;">
-				<Link class={style.menubutton} activeClassName={style.active} href="/symptoms">Symptoms&nbsp;report</Link>
-				<Link class={style.menubutton} activeClassName={style.active} href="/feedback">Patient&nbsp;feedback</Link>
+				<Link class={style.menubutton} activeClassName={style.active} href="/symptoms">Physical&nbsp;Symptoms</Link>
+				<Link class={style.menubutton} activeClassName={style.active} href="/feedback">Emotional&nbsp;Status</Link>
 				<Link class={style.menubutton} activeClassName={style.active} href="/info">Hospitalization&nbsp;info</Link>
 			</div>
 			
