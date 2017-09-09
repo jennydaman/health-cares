@@ -38,8 +38,8 @@ export default class App extends Component {
 
 					<Router id="widget" onChange={this.handleRoute}>
 						<Tip path="/" style="font-style: italic;" text="Please select an option to begin."/>
-						<Tip path="/symptoms" style="font-weight: bold;" text="How are you feeling?"/>
-						<Tip path="/feedback" style="font-weight: bold" text="How was your care?"/>
+						<Tip path="/symptoms" style="font-weight: bold;" text="How is it going??" link="https://goo.gl/forms/eE00IssHNCwdNgwW2"/>
+						<Tip path="/feedback" style="font-weight: bold" text="How are you feeling?" link="https://goo.gl/forms/2VVXWRxJm2CKY6m52"/>
 						<Tip path="/info" style="font-weight: bold" text="Learn more about your current status."/>
 					</Router>
 				</center>
