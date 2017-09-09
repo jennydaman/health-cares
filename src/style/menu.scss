@@ -1,0 +1,54 @@
+
+$selectc: #a5c7ff;
+$animtime: 0.5s;
+
+@keyframes incoming {
+    from {
+        transform: translateY(-10%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.home {
+	padding: 56px;
+	min-height: 100%;
+	width: 100%;
+}
+
+h1 {
+    font-size: 400%;
+    animation: incoming $animtime;    
+}
+
+
+
+button.menuoption {
+    vertical-align: middle;
+    border-radius: 25px;    
+    min-width: 30%;
+    font-size: 40px;
+    font-weight: bold;
+    color: inherit;
+    padding: 14% 16px;
+    margin: 20px;
+    cursor: pointer;
+    
+    
+    background: rgba(0, 0, 0, 0.2);
+    will-change: color, border;
+    transition: $animtime;
+    border: 2px solid;
+
+    &:hover {
+
+        border: 2px solid $selectc;
+        color: $selectc;
+    }
+
+    animation: incoming $animtime;
+}

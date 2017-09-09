@@ -1,11 +1,11 @@
 {
-  "name": "Preact PWA",
-  "short_name": "Preact PWA",
+  "name": "Health Cares - an intuitive, user-friendly interface for inpatients.",
+  "short_name": "Health Cares",
   "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#fff",
-  "theme_color": "#673ab8",
+  "theme_color": "#194996",
   "icons": [{
     "src": "/assets/icons/android-chrome-192x192.png",
     "type": "image/png",

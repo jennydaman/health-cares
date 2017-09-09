@@ -1,7 +1,7 @@
 {
   "name": "health-cares",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "Interface for inpatients to facilitate communication and honesty.",
   "main": "index.js",
   "scripts": {
     "test": "eslint src && preact test",
@@ -11,8 +11,8 @@
     "dev": "preact watch"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Jennings Zhang",
+  "license": "MIT",
   "eslintConfig": {
     "extends": "eslint-config-synacor"
   },
