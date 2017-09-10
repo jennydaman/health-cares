@@ -7,9 +7,9 @@ Built for [Medhacks 2017](http://medhacks.org/)
 
 # Branch p3serves
 
-Hospitalist client and patients database servers are both going to be standard zero-config web apps.
+Hospitalist client and patients database servers are served by a minimal node.js server.
 
-`python3 -m http.server`
+`cd patientsdb && node server.js`
 
 # Development
 

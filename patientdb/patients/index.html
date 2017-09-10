@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+    <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    
+
+    <style type="text/css">
+        #bubblechart {
+            float: left;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <div id="bubblechart"></div>
+
+    <ul id="patientlist">
+
+    </ul>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $("#bubblechart").load("bubblechart.html");
+
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", "patientslist.json", true);
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == xhr.DONE) {
+
+                    console.log(xhr.responseText);
+                    for (let key in JSON.parse(xhr.responseText)) {
+                        console.log("hi")
+                        $("#patientlist").append(
+                            $("<li>").text(key)
+                        );
+
+                    }
+                }
+            }
+            xhr.send();
+        });
+    </script>
+
+</body>
+
+
+</html>

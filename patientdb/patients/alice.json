@@ -1,6 +1,6 @@
 {
     "x": 1,
     "y": 2, 
-    "happiness": [3],
+    "happiness": [3, 5],
     "energy": [9] 
 }
