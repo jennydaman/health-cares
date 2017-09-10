@@ -1,6 +1,10 @@
 html, body {
+
+	padding: 5px;
+	height: 100%;
 	font-family: 'Open Sans', 'Trebuchet MS', sans-serif;
 	font-weight: 400;
+	font-size: 24px;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 
@@ -11,19 +15,29 @@ html, body {
 	background: linear-gradient(to bottom right, #E88553, #D30808); 
 }
 
-* {
-	box-sizing: border-box;
-}
-
-button {
+input.subb {
 	font: inherit;
+	font-size: inherit;
+	background: grey;
+	border: none;
+	min-height: 34px;	
+	padding: 0 6px;
 }
 
-.home {
-	padding-left: 5%;
-	padding-right: 5%;
-	padding-top: 5px;
-
-	min-height: 100%;
-	width: 100%;
+h1 {
+	color: white;
+	text-align: center;
 }
+
+input.field {
+	font-size: inherit;
+	min-width: 30%;
+	min-height: 32px;
+	
+	border: none;
+	background: grey;
+	background: rgba(0, 0, 0, 0.2);
+
+	float: left;
+}
+

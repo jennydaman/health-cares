@@ -4,43 +4,24 @@
 <head>
 
     <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-
-    <style type="text/css">
-        #patientchart {
-            float: left;
-        }
-    </style>
+    <script type="text/javascript" src="loader.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="list.css">
 </head>
 
 
 <body>
 
-    <p id="enterName">
-    </p>
-    <div id="outer_div">
-        <div id="inner_div">
-            <div id="chart_div1"></div>
-            <div id="chart_div2"></div>
-            <div id="chart_div3"></div>
-            <div id="chart_div4"></div>
-            <div id="chart_div5"></div>
-            <div id="chart_div6"></div>
-            <div id="chart_div7"></div>
-            <div id="chart_div8"></div>
-            <div id="chart_div9"></div>
-            <div id="chart_div10"></div>
-        </div>
-    </div>
-    <script type="text/javascript" src="patientchart.js"></script>                
-    
-
-
-    <ul id="patientlist">
+    <div class="listapp" style="float: left;">
+    <ul class="scrollingContainer list" id="patientlist">
 
     </ul>
+    </div>
+
+    <div id="series_chart_div" style="float: right; width: 900px; height: 700px;"></div> 
 
     <script type="text/javascript">
+
         $(document).ready(function () {
 
             var xhr = new XMLHttpRequest();
@@ -50,7 +31,7 @@
 
                     for (let key in JSON.parse(xhr.responseText)) {
                         $("#patientlist").append(
-                            $("<li>").text(key)
+                            $("<li>").append($("<label>").text(key))
                         );
                     }
                 }
@@ -58,6 +39,7 @@
             xhr.send();
         });
     </script>
+    <script type="text/javascript" src="bubblechart.js"></script>
 
 </body>
 
