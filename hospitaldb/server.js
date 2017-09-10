@@ -3,7 +3,7 @@ var fs = require('fs');
 var path = require('path');
 server = http.createServer(function (request, response) {
 
-    console.dir(request.param);
+    //console.dir(request.param);
 
     console.log(request.method + " " + request.url);
 

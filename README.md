@@ -9,7 +9,8 @@ Built for [Medhacks 2017](http://medhacks.org/)
 
 Hospitalist client and patients database servers are served by a minimal node.js server.
 
-`cd patientsdb && node server.js`
+`cd hospitaldb && node server.js`
+
 
 # Development
 
