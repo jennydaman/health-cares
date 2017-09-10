@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+
+
+<div id="series_chart_div" style="width: 900px; height: 700px;"></div>
+<script type="text/javascript">
+    google.charts.load('current', { 'packages': ['corechart'] });
+    google.charts.setOnLoadCallback(drawSeriesChart);
+
+    function drawSeriesChart() {
+
+        var data = google.visualization.arrayToDataTable([
+            ['ID', 'X', 'Y', 'Happiness', 'Energy'],
+            ['Alice', 1, 2, 3, 9],
+            ['Pat', 4, 9, 4, 1],
+            ['Darby', 9, 9, 6, 3],
+            ['Eline', 9, 3, 3, 2],
+            ['Gabe', 2, 2, 2, 4],
+            ['Irene', 8, 3, 1, 5],
+            ['Iline', 3, 5, 3, 9],
+            ['Maddie', 4, 3, 9, 1],
+            ['Randy', 2, 2, 2, 5],
+            ['USA', 4, 2, 1, 0]
+        ]);
+
+        var options = {
+            title: 'Patient Mood: Room 201',
+            colorAxis: { colors: ['red', 'blue'] }
+        };
+
+        var chart = new google.visualization.BubbleChart(document.getElementById('series_chart_div'));
+        chart.draw(data, options);
+    }
+</script>
