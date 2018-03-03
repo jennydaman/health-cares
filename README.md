@@ -1,5 +1,7 @@
 # Health Cares
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/jennydaman/health-cares.svg)](https://greenkeeper.io/)
+
 Built for [Medhacks 2017](http://medhacks.org/)
 
 ![MedHacks logo](http://medhacks.org/assets/img/logo_dark.png)
